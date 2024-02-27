@@ -1,0 +1,22 @@
+{
+    "locale": {
+        "en": "🇺🇸 Ingles",
+        "es": "🇪🇸 Español"
+    },
+    "nav": {
+        "inicio": "Inicio",
+        "sobre": "Sobre mi",
+        "proyectos": "Proyectos",
+        "contactame": "Contactame"
+    },
+    "body": {
+        "dev": "Desarrollador Front-end",
+        "descarga": "Descargar CV",
+        "descripcion": "Soy un programador Front end apasionado por la programacion web y de sofware, me encanta crear paginas y aplicaciones web dinamicas usando frameworks. Mis hobbies son jugar ajedrez y videojuegos de vez en cuando. Tambien me gusta estudiar idiomas actualemente estudio Ingles y Aleman. Tambien me gusta estar mejorando constatemente como programador y tengo experiencia usando diferentes versiones de Linux. ",
+        "tecnologia": "Tecnologias",
+        "proyectos": "Proyectos",
+        "contactame": "Contactame",
+        "textarea": "Mensaje",
+        "enviar": "Enviar Mensaje"
+    }
+}

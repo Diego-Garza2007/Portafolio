@@ -1,0 +1,22 @@
+{
+    "locale": {
+        "en": "🇺🇸 English",
+        "es": "🇪🇸 Spanish"
+    },
+    "nav": {
+        "inicio": "Home",
+        "sobre": "About me",
+        "proyectos": "Projects",
+        "contactame": "Contact me"
+    },
+    "body": {
+        "dev": "Front-end Developer",
+        "descarga": "Download CV",
+        "descripcion": "I am a Front-end programmer passionate about web programming and software, I love creating dynamic web pages and applications using frameworks. My hobbies are playing chess and video games from time to time. I also like to study languages. I am currently studying English and German. I also like to constantly improve as a programmer, and I have experience using different versions of Linux.",
+        "tecnologia": "Skills",
+        "proyectos": "Projects",
+        "contactame": "Contact me",
+        "textarea": "Message",
+        "enviar": "Send Message"
+    }
+}

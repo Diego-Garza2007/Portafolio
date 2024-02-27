@@ -2,7 +2,7 @@ import './assets/main.css'
 import './Scss/global.scss'
 import './Scss/Navbar.scss'
 import './Scss/DarkMode.scss'
-import './Scss/Homeview.scss'
+import './Scss/HomeView.scss'
 import { createApp } from 'vue/dist/vue.esm-bundler'
 import { createPinia } from 'pinia'
 /* import the fontawesome core */

@@ -7,7 +7,7 @@
     <div id="home"></div>
     <div class="container-home" >
         <div>
-        <img src="../assets/Foto diego.png" class="container-home__img">
+        <img src="../assets/Foto-diego.png" class="container-home__img">
     </div>
     <div class="container-home__info">
         <h1 class="container-home__title">Diego Emilio Garza Gudino</h1>

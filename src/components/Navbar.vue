@@ -8,7 +8,7 @@
 
 <template>
       <nav class="nav">
-    <img src="../assets/dev-removebg-preview 1.svg">
+    <img src="../assets/dev-removebg-preview-1.svg">
     <ul>
         <li class="nav__enlace"><a href="#home">{{ $t("nav.inicio") }}</a></li>
         <li class="nav__enlace"><a href="#about">{{ $t("nav.sobre") }}</a></li>

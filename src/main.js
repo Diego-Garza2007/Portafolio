@@ -1,4 +1,3 @@
-import './assets/main.css'
 import './Scss/global.scss'
 import './Scss/Navbar.scss'
 import './Scss/DarkMode.scss'

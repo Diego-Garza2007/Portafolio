@@ -10,8 +10,4 @@
     <About />
     <Projects />
     <Contact />
-
-
-
-
 </template>

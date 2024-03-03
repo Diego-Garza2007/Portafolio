@@ -20,3 +20,64 @@
     </section>
 
 </template>
+
+<style lang="scss">
+@import '../Scss/_Variables.scss';
+.container-contacto {
+    margin: 300px 0px 0px 0px;
+
+    h1 {
+        padding: 50px 0px 0px 0px;
+        color: white;
+        font-size: 64px;
+        text-align: center;
+    }
+
+    &__form {
+        width: 50%;
+        margin: 100px auto 0px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &__email {
+        font-size: 18px;
+        height: 3.5rem;
+        margin: 0px 0px 30px 0px;
+        font-family: $font-Ubuntu;
+        padding: 10px 0px 10px 10px;
+
+        &::placeholder {
+            font-size: 20px;
+        }
+    } 
+    &__desc {
+        font-size: 18px;
+        height: 3.5rem;
+        margin: 0px 0px 30px 0px;
+        padding: 10px 0px 200px 10px;
+        font-family: $font-Ubuntu;
+        resize: none;
+
+        &::placeholder {
+            font-size: 20px;
+        }
+    }
+    &__submit {
+        margin: 50px auto 200px auto;
+        border: none;
+        border-radius: 7px;
+        width: 250px;
+        padding: 16px 18px;
+        background-color: $Primary-color;
+        color: white;
+        font-size: 20px;
+        
+
+        &:hover {
+            cursor: pointer;
+            background-color: $Secundary-color;
+            transition: 0.5s ease;
+        }
+    }
+}
+</style>

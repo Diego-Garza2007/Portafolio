@@ -29,12 +29,12 @@
     h1 {
         padding: 50px 0px 0px 0px;
         color: white;
-        font-size: 64px;
+        font-size: 48px;
         text-align: center;
     }
 
     &__form {
-        width: 50%;
+        width: 70%;
         margin: 100px auto 0px auto;
         display: flex;
         flex-direction: column;
@@ -79,5 +79,16 @@
             transition: 0.5s ease;
         }
     }
+}
+@media (min-width: 1024px) {
+.container-contacto { 
+    &__form {
+        width: 50%;
+
+    }
+    h1 {
+        font-size: 64px;
+    }
+}
 }
 </style>

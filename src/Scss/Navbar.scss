@@ -10,6 +10,8 @@
     display: none;
 }
 
+
+
 .nav {
     position: fixed;
     top: 0;
@@ -33,6 +35,7 @@
         margin: auto 0% auto 1%;
     }
     ul {
+       
         li {
             list-style: none;
             font-size: 20px;
@@ -43,19 +46,18 @@
         }
     }
     &__Contact {
+        text-align: end;
         background-color: Variables.$Secundary-color; 
         border: none;
         padding: 12px 26px;
-        text-align: center;
         text-decoration: none;
-        display: inline-block;
         font-size: 20px;
-        margin: 4px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
         border-radius: 15px;
         font-family: Variables.$font-Ubuntu;
         font-weight: bold;
+        margin: 0px 0px 0px 310px;
 
         a {
             color: white;
@@ -94,12 +96,23 @@
         background-color: Variables.$base-color;
         cursor: pointer;
         border-radius: 5px;
-        margin: 0px 0px 0px 30px;
+        margin: 10px 0px 0px 0px;
     }
     &__divIcons {
         margin: 25px 0px 0px 0px;
         display: inline-block;
+        direction: rtl;
+        
     }
+    &__mod {
+        background-color: Variables.$Secundary-color; 
+        &:hover {
+            background-color: Variables.$Primary-color;
+            a {
+                color: rgb(211, 211, 211);
+            }
+        }
+      }
 }
 
 @media (max-width: 1600px) {
@@ -159,11 +172,15 @@
             }
         }
     
+        &__Contact {
+            display: inline-block;
+            margin: 4px 2px;
+        }
         &__line {
             width: 1px;
             height: 35px;
             background-color: #7c7c7c;
-            margin: 0px 20px 10px 15px; 
+            margin: 0px 0px 10px 15px; 
         }
         &__divIcons {
             width: 15%;
@@ -172,29 +189,19 @@
             align-items: center;
             justify-content: space-around;
             
-    
-            .Ilang {
-                margin: 0px 0px 0px 0px;
-            }
-            .Imoon {
-                margin: 0px 30px 5px 0px;
-            }
+
         }
+        &__button {
+            margin: 0px 0px 5px 0px;
+        }
+
         &__enlace {
 
             :hover {
                 color: Variables.$Secundary-color;
             }
         }
-        &__mod {
-            background-color: Variables.$Secundary-color; 
-            &:hover {
-                background-color: Variables.$Primary-color;
-                a {
-                    color: rgb(211, 211, 211);
-                }
-            }
-          }
+
     }
 
 }

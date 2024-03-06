@@ -56,6 +56,7 @@
   margin: 0;      
   box-sizing: border-box;
    appearance: none;
+   direction: ltr;
 
     }
 
@@ -75,8 +76,6 @@
         1.5em 1.5em;
         background-repeat: no-repeat;
 
-
-
             :focus {
         background-image:
             linear-gradient(45deg, white 50%, transparent 50%),
@@ -93,7 +92,6 @@
         background-repeat: no-repeat;
         border-color: green;
         outline: 0;
-
         }
     }
 </style>

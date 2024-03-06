@@ -7,8 +7,8 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 
     <p>Derechos reservados &#169;</p>
     <div class="footer__icons">
-    <font-awesome-icon icon="fa-brands fa-linkedin" class="fa-2xl"/>
-    <font-awesome-icon icon="fa-brands fa-github" class="fa-2xl"/>
+    <a target="_blank" href="https://www.linkedin.com/in/diego-garza-gudino-918a9720b/?originalSubdomain=mx"><font-awesome-icon icon="fa-brands fa-linkedin" class="fa-2xl"/></a>
+    <a target="_blank" href="https://github.com/Diego-Garza2007"><font-awesome-icon icon="fa-brands fa-github" class="fa-2xl"/></a>
     </div>
 </div>
 </template>
@@ -18,7 +18,9 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 
 .fa-linkedin {
     color: $Secundary-color;
-    margin: 0px 10px 0px 0px;
+}
+.fa-github {
+    color: black;
 }
 .footer {
     width: 100%;
@@ -34,7 +36,14 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 
     &__icons {
         margin: 25px 2% 0px 0px;
+        width: 4%;
+        display: flex;
+        justify-content: space-between;
 
+        a {
+            cursor: pointer;
+            text-decoration: none;
+        }
     }
     
 }

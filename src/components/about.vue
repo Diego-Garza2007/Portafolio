@@ -17,7 +17,6 @@
                 <img src="../assets/Figma.svg" alt="">
                 <img src="../assets/Vscode.svg" alt="">
                 <img src="../assets/Vue.svg" alt="">
-                <img src="../assets/React.svg" alt="">
                 <img src="../assets/Nvim.svg" alt="">
             </div>
         </div>

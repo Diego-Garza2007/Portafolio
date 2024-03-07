@@ -35,14 +35,15 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
     }
 
     &__icons {
-        margin: 25px 2% 0px 0px;
-        width: 4%;
+        margin: 25px 4% 0px 0px;
+        width: auto;
         display: flex;
         justify-content: space-between;
 
         a {
             cursor: pointer;
             text-decoration: none;
+            margin: 0px 15px 0px 0px;
         }
     }
     

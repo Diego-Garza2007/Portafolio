@@ -69,7 +69,7 @@
         margin: 0px 0px 30px 0px;
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1124px) {
  .container-about {
     width: 950px;
 

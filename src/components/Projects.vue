@@ -1,12 +1,12 @@
 <template>
     <div class="container-proyectos" id="projects">
         <h1>{{ $t("body.proyectos") }}</h1>
-
+<div class="container-proyectos__Layout">
         <div class="container-proyectos__Card">
 
             <img src="../assets/proyectgit.png" alt="" class="container-proyectos__MainImage">
             <div class="container-proyectos__Card__contenido">
-                <p><a href="https://diego-garza2007.github.io/Front-mentor-Junior1/" target="_blank">Aplicacion de correctos con funcionalidades y UI</a></p>
+                <p><a href="https://diego-garza2007.github.io/Front-mentor-Junior1/" target="_blank">Validacion de formulario</a></p>
                 <div>
                 <img src="../assets/Html.svg" alt="">
                 <img src="../assets/Css.svg" alt="">
@@ -15,27 +15,26 @@
             </div>
         </div>
 
-<!--         <div class="container-proyectos__Card">
+    <div class="container-proyectos__Card">
 
-<img src="../assets/Ejemplo.png" alt="">
-<div class="container-proyectos__Card__contenido">
-    <p>Aplicacion de correctos con funcionalidades y UI</p>
-    <div>
-    <img src="../assets/Html.svg" alt="">
-    <img src="../assets/Css.svg" alt="">
-    <img src="../assets/JS.svg" alt="">
-    <img src="../assets/React.svg" alt="">
-</div>
-</div>
-    </div>  
--->
+        <img src="../assets/Age-app.png" alt="">
+        <div class="container-proyectos__Card__contenido">
+            <p><a href="https://diego-garza2007.github.io/Front-mentor-Junior2/" target="_blank">Calculadora de edad</a></p>
+            <div>
+            <img src="../assets/Html.svg" alt="">
+            <img src="../assets/Css.svg" alt="">
+            <img src="../assets/JS.svg" alt="">
+        </div>
+        </div>
+            </div>  
+
     </div> 
+</div>
 </template>
 
 <style lang="scss">
 @import '../Scss/_Variables.scss';
 .container-proyectos {
-    width: 50%;
     margin: 50px auto 0px auto;
 
     h1 {
@@ -43,6 +42,13 @@
         font-size: 48px;
         color: $Secundary-color;
         margin: 0px 0px 100px 0px;
+    }
+
+    &__Layout {
+        width: 100%;
+        margin: 0px auto 0px auto;
+        display: flex;
+
     }
 
     &__MainImage {
@@ -93,6 +99,7 @@
  
     }
 }
+
 @media (min-width: 1024px) {
     .container-proyectos {
         margin: 70px auto 0px auto;
@@ -102,6 +109,9 @@
     }
     &__Card {
         margin: 0px auto 0px auto;
+    }
+    &__Layout {
+        width: 50%;
     }
 
 }

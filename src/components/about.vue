@@ -15,9 +15,10 @@
                 <img src="../assets/Css.svg" alt="">
                 <img src="../assets/JS.svg" alt="">
                 <img src="../assets/Figma.svg" alt="">
-                <img src="../assets/Vscode.svg" alt="">
                 <img src="../assets/Vue.svg" alt="">
-                <img src="../assets/Nvim.svg" alt="">
+                <img src="../assets/Laravel.svg" alt="">
+                <img src="../assets/Linux.svg" alt="">
+                <img src="../assets/Python.svg" alt="">
             </div>
         </div>
     </div>

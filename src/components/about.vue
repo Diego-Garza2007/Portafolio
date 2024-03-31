@@ -35,28 +35,28 @@
 			<img src="../../public/logos/Figma.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/Linux.svg" height="100" width="250" alt="" />
+			<img src="/logos/Linux.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/Laravel.svg" height="100" width="250" alt="" />
+			<img src="/logos/Laravel.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/Python.svg" height="100" width="250" alt="" />
+			<img src="/logos/Python.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/Bash.svg" height="100" width="250" alt="" />
+			<img src="/logos/Bash.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/Docker.svg" height="100" width="250" alt="" />
+			<img src="/logos/Docker.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/Sass.svg" height="100" width="250" alt="" />
+			<img src="/logos/Sass.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/Typescrip.svg" height="100" width="250" alt="" />
+			<img src="/logos/Typescrip.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/Vue.svg" height="100" width="250" alt="" />
+			<img src="/logos/Vue.svg" height="100" width="250" alt="" />
 		</div>
 	</div>
 </div>
@@ -99,7 +99,6 @@
     }
 
 }
-
 .div-icon {
         display: flex;
         align-items: center;
@@ -115,49 +114,7 @@
             margin: 0px 80px 0px 0px;
         }
     }
-@media (min-width: 1124px) {
- .container-about {
-    width: 950px;
-
-
-&__title {
-    font-size: 64px;
-    margin: 0px 0px 50px 0px;
-}
-
-&__text {
-    font-size: 18px;
-    color: white;
-    width: 620px;
-    margin: 0px 0px 70px 0px;
-}
-
-&__tecnologia {
-    color: white;
-    font-size: 32px;
-    margin: 0px 0px 45px 0px;
-}
-
-&__div-icon {
-    display: flex;
-    flex-direction: row;
-    margin: 0px 0px 50px 0px;
-    width: 1232px;
-    height: 150px;
-    gap: 0px;
-    padding: 0px;
-    border-radius: 15px;
-
-    img {
-        width: 100%;
-        margin: 40px 0px 0px 0px;
-        height: 40%;
-        justify-content: space-around; 
-    }
-}
-
-}
-@mixin white-gradient {
+	@mixin white-gradient {
 	background: linear-gradient(to right,  rgb(9, 44, 199) 0%,rgba(255,255,255,0) 100%);
 }
 
@@ -211,6 +168,49 @@ $animationSpeed: 10s;
 		width: 250px;
 	}
 } 
+@media (min-width: 1124px) {
+ .container-about {
+    width: 950px;
+
+
+&__title {
+    font-size: 64px;
+    margin: 0px 0px 50px 0px;
+}
+
+&__text {
+    font-size: 18px;
+    color: white;
+    width: 620px;
+    margin: 0px 0px 70px 0px;
+}
+
+&__tecnologia {
+    color: white;
+    font-size: 32px;
+    margin: 0px 0px 45px 0px;
+}
+
+&__div-icon {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 50px 0px;
+    width: 1232px;
+    height: 150px;
+    gap: 0px;
+    padding: 0px;
+    border-radius: 15px;
+
+    img {
+        width: 100%;
+        margin: 40px 0px 0px 0px;
+        height: 40%;
+        justify-content: space-around; 
+    }
+}
+
+}
+
 }
 
 </style>

@@ -1,7 +1,3 @@
-<script>
-    import Projects from '../components/Projects.vue';
-</script>
-
 <template>
      <h1 class="title-proyect">{{ $t("body.proyectos") }}</h1>
 <section class="container-proyectos" id="projects">
@@ -33,6 +29,7 @@
                         </div>
                     </div>
                 </div>  
+                
                 <div class="container-proyectos__Card">
 
                     <img src="../assets/Age-app.png" alt="">
@@ -46,7 +43,7 @@
                         </div>
                 </div>  
 
-                    <div class="container-proyectos__Card">
+                <div class="container-proyectos__Card">
 
                     <img src="../assets/Age-app.png" alt="">
                         <div class="container-proyectos__Card__contenido">
@@ -57,7 +54,7 @@
                                 <img src="/Cards/JSC.svg" alt="">
                         </div>
                         </div>
-                    </div> 
+                </div> 
        
 </section>
 

@@ -24,7 +24,8 @@
 <style lang="scss">
 @import '../Scss/_Variables.scss';
 .container-contacto {
-    margin: 300px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    max-height: 700px;
 
     h1 {
         padding: 50px 0px 0px 0px;
@@ -34,8 +35,8 @@
     }
 
     &__form {
-        width: 70%;
-        margin: 100px auto 0px auto;
+        width: 80%;
+        margin: 5% auto 0px auto;
         display: flex;
         flex-direction: column;
     }
@@ -45,6 +46,8 @@
         margin: 0px 0px 30px 0px;
         font-family: $font-Ubuntu;
         padding: 10px 0px 10px 10px;
+        border-radius: 15px;
+        border: none;
 
         &::placeholder {
             font-size: 20px;
@@ -57,13 +60,16 @@
         padding: 10px 0px 200px 10px;
         font-family: $font-Ubuntu;
         resize: none;
+        border-radius: 15px;
+        border: none;
+        scrollbar-width: none;
 
         &::placeholder {
             font-size: 20px;
         }
     }
     &__submit {
-        margin: 50px auto 200px auto;
+        margin: 5% auto 5% auto;
         border: none;
         border-radius: 7px;
         width: 250px;
@@ -83,7 +89,7 @@
 @media (min-width: 1024px) {
 .container-contacto { 
     &__form {
-        width: 50%;
+        width: 45%;
 
     }
     h1 {

@@ -10,22 +10,63 @@
 
         <div>
             <h1 class="container-about__tecnologia">{{ $t("body.tecnologia") }}</h1>
-            <div class="container-about__div-icon">
-                <img src="../assets/Html.svg" alt="">
-                <img src="../assets/Css.svg" alt="">
-                <img src="../assets/JS.svg" alt="">
-                <img src="../assets/Figma.svg" alt="">
-                <img src="../assets/Vue.svg" alt="">
-                <img src="../assets/Laravel.svg" alt="">
-                <img src="../assets/Linux.svg" alt="">
-                <img src="../assets/Python.svg" alt="">
-            </div>
+
         </div>
+
     </div>
+    <div class="slider">
+	<div class="slide-track">
+		<div class="slide">
+			<img src="../../public/logos/HTML.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/CSS.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/JS.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/Git.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/Github.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/Figma.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/Linux.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/Laravel.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/Python.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/Bash.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/Docker.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/Sass.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/Typescrip.svg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="../../public/logos/Vue.svg" height="100" width="250" alt="" />
+		</div>
+	</div>
+</div>
+
+
     </section>
 </template>
 
 <style lang="scss">
+@import '../Scss/_Variables.scss';
 .container-about {
 
     display: flex;
@@ -56,20 +97,24 @@
         font-weight: bold;
         margin: 0px 0px 45px 0px;
     }
-    &__div-icon {
-        display: grid;
+
+}
+
+.div-icon {
+        display: flex;
+        align-items: center;
         width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(auto, 1fr);
-        gap: 25px;
-        border-radius: 15px;
+        height: 100px;
         background: linear-gradient(307deg, rgba(255, 255, 255, 0.40) 20.69%, rgba(32, 88, 200, 0.31) 43.53%, rgba(23, 51, 105, 0.22) 69.23%, rgba(0, 0, 0, 0.04) 91.44%);
         box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(20px); 
         padding: 25px;
-        margin: 0px 0px 30px 0px;
+        margin: 0px 0px 0px 0px;
+
+        img {
+            margin: 0px 80px 0px 0px;
+        }
     }
-}
 @media (min-width: 1124px) {
  .container-about {
     width: 950px;
@@ -77,7 +122,7 @@
 
 &__title {
     font-size: 64px;
-    margin: 0px 0px 100px 0px;
+    margin: 0px 0px 50px 0px;
 }
 
 &__text {
@@ -96,7 +141,7 @@
 &__div-icon {
     display: flex;
     flex-direction: row;
-    margin: 0px 0px 350px 0px;
+    margin: 0px 0px 50px 0px;
     width: 1232px;
     height: 150px;
     gap: 0px;
@@ -111,6 +156,60 @@
     }
 }
 
+}
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgb(9, 44, 199) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 10s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	background: $Primary-color;
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 1960px;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
 } 
 }
 

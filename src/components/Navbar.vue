@@ -1,8 +1,11 @@
 <script setup>
- import { useDark, useToggle} from '@vueuse/core'
- import LanguageSwicht from './LanguageSwicht.vue';
+  import { useDark, useToggle} from '@vueuse/core'
+  import LanguageSwicht from './LanguageSwicht.vue';
   const isDark = useDark()
   const toggleDark = useToggle(isDark)
+  import { RouterLink } from 'vue-router'
+  import Tr from "@/i18n/translation"
+
 
   function AbrirNav() {
     const mobile = document.querySelector('#mobile_select')
@@ -10,19 +13,24 @@
     mobile.classList.toggle('None')
   }
 
+  function scrollToContact() {
+      const contactoElement = document.getElementById('contacto');
+        if (contactoElement) {
+          contactoElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+
 </script>
 
 <template>
       <nav class="nav">
-    <img src="../assets/dev-removebg-preview-1.svg">
     <div id="mobile_select" class="None nav__desktop">
       <div class="nav__mobileflex">
     <ul>
-        <li class="nav__enlace"><a href="#home">{{ $t("nav.inicio") }}</a></li>
-        <li class="nav__enlace"><a href="#about">{{ $t("nav.sobre") }}</a></li>
-        <li class="nav__enlace"><a href="#projects">{{ $t("nav.proyectos") }}</a></li>
-        <button class="nav__Contact nav__mod"><a href="#contacto">{{ $t("nav.contactame") }}</a></button> 
-
+      <li class="nav__enlace"><RouterLink :to="Tr.i18nRoute({ name: 'home' })" >Inicio</RouterLink></li>
+      <li class="nav__enlace"><RouterLink :to="Tr.i18nRoute({ name: 'proyectos' })">{{ $t("nav.proyectos") }}</RouterLink></li>
+      <button class="nav__Contact nav__mod" @click="scrollToContact">Contactame</button>
     </ul>
 
     

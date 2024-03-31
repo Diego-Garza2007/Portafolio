@@ -14,9 +14,9 @@
                     <div class="container-proyectos__Card__contenido">
                         <p><a href="https://diego-garza2007.github.io/Front-mentor-Junior1/" target="_blank">Validacion de formulario</a></p>
                         <div>
-                        <img src="../assets/Html.svg" alt="">
-                        <img src="../assets/Css.svg" alt="">
-                        <img src="../assets/JS.svg" alt="">
+                        <img src="/Cards/HtmlC.svg" alt="">
+                        <img src="/Cards/CssC.svg" alt="">
+                        <img src="/Cards/JSC.svg" alt="">
                     </div>
                     </div>
                 </div>
@@ -27,9 +27,9 @@
                         <div class="container-proyectos__Card__contenido">
                             <p><a href="https://diego-garza2007.github.io/Front-mentor-Junior2/" target="_blank">Calculadora de edad</a></p>
                             <div>
-                            <img src="../assets/Html.svg" alt="">
-                            <img src="../assets/Css.svg" alt="">
-                            <img src="../assets/JS.svg" alt="">
+                            <img src="/Cards/HtmlC.svg" alt="">
+                            <img src="/Cards/CssC.svg" alt="">
+                            <img src="/Cards/JSC.svg" alt="">
                         </div>
                     </div>
                 </div>  
@@ -39,9 +39,9 @@
                         <div class="container-proyectos__Card__contenido">
                             <p><a href="https://diego-garza2007.github.io/Front-mentor-Junior2/" target="_blank">Calculadora de edad</a></p>
                             <div>
-                            <img src="../assets/Html.svg" alt="">
-                            <img src="../assets/Css.svg" alt="">
-                            <img src="../assets/JS.svg" alt="">
+                                <img src="/Cards/HtmlC.svg" alt="">
+                        <img src="/Cards/CssC.svg" alt="">
+                        <img src="/Cards/JSC.svg" alt="">
                         </div>
                         </div>
                 </div>  
@@ -52,9 +52,9 @@
                         <div class="container-proyectos__Card__contenido">
                             <p><a href="https://diego-garza2007.github.io/Front-mentor-Junior2/" target="_blank">Calculadora de edad</a></p>
                             <div>
-                            <img src="../assets/Html.svg" alt="">
-                            <img src="../assets/Css.svg" alt="">
-                            <img src="../assets/JS.svg" alt="">
+                                <img src="/Cards/HtmlC.svg" alt="">
+                                <img src="/Cards/CssC.svg" alt="">
+                                <img src="/Cards/JSC.svg" alt="">
                         </div>
                         </div>
                     </div> 

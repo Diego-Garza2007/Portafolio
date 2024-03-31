@@ -17,22 +17,22 @@
     <div class="slider">
 	<div class="slide-track">
 		<div class="slide">
-			<img src="../../public/logos/HTML.svg" height="100" width="250" alt="" />
+			<img src="/logos/HTML.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/CSS.svg" height="100" width="250" alt="" />
+			<img src="/logos/CSS.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/JS.svg" height="100" width="250" alt="" />
+			<img src="/logos/JS.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/Git.svg" height="100" width="250" alt="" />
+			<img src="/logos/Git.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/Github.svg" height="100" width="250" alt="" />
+			<img src="/logos/Github.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="../../public/logos/Figma.svg" height="100" width="250" alt="" />
+			<img src="/logos/Figma.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
 			<img src="/logos/Linux.svg" height="100" width="250" alt="" />

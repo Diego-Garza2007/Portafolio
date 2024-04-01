@@ -9,7 +9,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
-import { faMoon, faLanguage, faSun, faFile, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faMoon, faLanguage, faSun, faFile, faBars, faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { fab } from "@fortawesome/free-brands-svg-icons"
 
 import App from './App.vue'
@@ -18,7 +18,7 @@ import i18n from "./i18n"
 
 const app = createApp(App)
 
-library.add(faMoon, faLanguage, faSun, faFile, faBars, fab)
+library.add(faMoon, faLanguage, faSun, faFile, faBars, faGlobe ,fab)
 app.use(createPinia())
 app.use(router)
 app.use(i18n)

@@ -36,7 +36,6 @@
         :selected="locale === sLocale"
 
         >{{ t(`locale.${sLocale}`) }}</option>
-    
     </select>
 </template>
 

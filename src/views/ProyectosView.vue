@@ -1,5 +1,10 @@
+<script setup>
+    import Contact from '../components/contact.vue'
+    import Footer from '../components/footer.vue'
+</script>
+
 <template>
-     <h1 class="title-proyect">{{ $t("body.proyectos") }}</h1>
+     <h1 class="title-proyect"><a>{{ $t("body.proyectos") }}</a></h1>
 <section class="container-proyectos" id="projects">
    
         
@@ -55,26 +60,60 @@
                         </div>
                         </div>
                 </div> 
+                <div class="container-proyectos__Card">
+
+<img src="../assets/Age-app.png" alt="">
+    <div class="container-proyectos__Card__contenido">
+        <p><a href="https://diego-garza2007.github.io/Front-mentor-Junior2/" target="_blank">Calculadora de edad</a></p>
+        <div>
+            <img src="/Cards/HtmlC.svg" alt="">
+            <img src="/Cards/CssC.svg" alt="">
+            <img src="/Cards/JSC.svg" alt="">
+    </div>
+    </div>
+</div> 
        
 </section>
 
+<Contact />
+<Footer />
 </template>
 
 <style lang="scss">
 @import '../Scss/_Variables.scss';
 
+
+
 .title-proyect {
-        text-align: center;
+        text-align: left;
         font-size: 48px;
-        color: $Secundary-color;
+        text-align: center; 
         margin: 150px 0px 100px 0px;
+        
+        a {
+        animation: fluido 5s ease-in-out infinite;
+        background: linear-gradient(-45deg, #553aec, #943ce7, #23a6d5, #23d5ab);
+        background-size: 300%;
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes fluido {
+            0% { background-position: 0 50% }
+            50% { background-position: 100% 50% }
+            100% { background-position: 0 50% }
+        }
     }
+
 .container-proyectos {
     width: 340;
-    margin: 0px auto 0px auto;
+    margin: 0px auto 30px auto;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(1,1fr);
+    height: auto;
+    gap: 20px;
  
     &__MainImage {
             border-radius: 15px 15px 0px 0px;
@@ -89,6 +128,7 @@
         margin: 0px auto 0px auto;
         display: flex;
         flex-direction: column;
+        
 
         &__contenido {
             padding: 20px;
@@ -120,7 +160,7 @@
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(3,1fr);
         gap: 30px;
-    
+        height: 120vh;
 }
 }
  
@@ -134,7 +174,7 @@
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(4,1fr);
         gap: 30px;
-    
+        height: 100vh;
 
 
 

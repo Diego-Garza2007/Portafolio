@@ -4,7 +4,7 @@
 
 
         <div>
-            <h1 class="container-about__title">{{ $t("nav.sobre") }}</h1>
+            <h1 class="container-about__title"><a>{{ $t("nav.sobre") }}</a></h1>
             <p class="container-about__text">{{ $t("body.descripcion") }}</p>
         </div>
 
@@ -82,6 +82,20 @@
         font-size: 48px;
         margin: 0px 0px 50px 0px;
         color: white;
+		a {
+        animation: fluido 5s ease-in-out infinite;
+        background: linear-gradient(-45deg, #553aec, #943ce7, #23a6d5, #23d5ab);
+        background-size: 300%;
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes fluido {
+            0% { background-position: 0 50% }
+            50% { background-position: 100% 50% }
+            100% { background-position: 0 50% }
+        }
     }
         &__text {
         font-size: 14px;
@@ -134,7 +148,7 @@ $animationSpeed: 10s;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-	width: 1960px;
+	width: 100%;
 	
 	&::before,
 	&::after {

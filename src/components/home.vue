@@ -13,7 +13,6 @@
     </div>
 
     <img src="../assets/Wave.svg" class="wave" id="about">
-
 </template>
 
 <style lang="scss">

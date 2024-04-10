@@ -32,7 +32,7 @@
 			<img src="/logos/Github.svg" height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="/logos/Figma.svg" height="100" width="250" alt="" />
+			<img src="/logos/Figma.svg" height="100" width="250" alt="" />  
 		</div>
 		<div class="slide">
 			<img src="/logos/Linux.svg" height="100" width="250" alt="" />

@@ -30,7 +30,7 @@
     <ul>
       <li class="nav__enlace"><RouterLink :to="Tr.i18nRoute({ name: 'home' })" >Inicio</RouterLink></li>
       <li class="nav__enlace"><RouterLink :to="Tr.i18nRoute({ name: 'proyectos' })">{{ $t("nav.proyectos") }}</RouterLink></li>
-      <button class="nav__Contact nav__mod" @click="scrollToContact">Contactame</button>
+      <button class="nav__Contact nav__mod" @click="scrollToContact">{{ $t("nav.contactame") }}</button>
     </ul>
 
     

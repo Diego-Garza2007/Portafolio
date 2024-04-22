@@ -54,7 +54,7 @@ import Footer from "../components/footer.vue";
       <div class="container-proyectos__Card__contenido">
         <p>
           <a
-            href="https://diego-garza2007.github.io/Front-mentor-Junior2/"
+            href="https://bebidas-api-vue.netlify.app/"
             target="_blank"
             >Api de Bebidas</a
           >
@@ -73,14 +73,14 @@ import Footer from "../components/footer.vue";
       <div class="container-proyectos__Card__contenido">
         <p>
           <a
-            href="https://diego-garza2007.github.io/Front-mentor-Junior2/"
+            href="#"
             target="_blank"
-            >Red Social Eiaostagram</a
+            >Red Social Eiaostagram - Coming soon</a
           >
         </p>
         <div class="container-proyectos__Card__FlexImg">
-          <img src="/Cards/LaravelC.svg" alt="" />
-          <img src="/Cards/dockerC.svg" alt="" />
+<!--           <img src="/Cards/LaravelC.svg" alt="" />
+          <img src="/Cards/dockerC.svg" alt="" /> -->
         </div>
       </div>
     </div>
@@ -91,34 +91,18 @@ import Footer from "../components/footer.vue";
           <a
             href="https://diego-garza2007.github.io/Front-mentor-Junior2/"
             target="_blank"
-            >Calculadora Matematica</a
+            >Calculadora Matematica - in Progress </a
           >
         </p>
         <div class="container-proyectos__Card__FlexImg">
-          <img src="/Cards/HtmlC.svg" alt="" />
+<!--           <img src="/Cards/HtmlC.svg" alt="" />
           <img src="/Cards/CssC.svg" alt="" />
           <img src="/Cards/JSC.svg" alt="" />
-          <img src="/Cards/VueC.svg" alt="" />
+          <img src="/Cards/VueC.svg" alt="" /> -->
         </div>
       </div>
     </div>
-    <div class="container-proyectos__Card">
-      <img src="/Cards/FreshCoffe.svg" alt="" />
-      <div class="container-proyectos__Card__contenido">
-        <p>
-          <a
-            href="https://diego-garza2007.github.io/Front-mentor-Junior2/"
-            target="_blank"
-            >App de comida</a
-          >
-        </p>
-        <div class="container-proyectos__Card__FlexImg">
-            <img src="/Cards/LaravelC.svg" alt="" />
-             <img src="/Cards/dockerC.svg" alt="" />
-             <!-- Aca va react -->
-        </div>
-      </div>
-    </div>
+
   </section>
 
   <Contact />

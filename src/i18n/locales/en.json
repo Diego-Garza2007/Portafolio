@@ -18,5 +18,8 @@
         "contactame": "Contact me",
         "textarea": "Message",
         "enviar": "Send Message"
+    },
+    "footer": {
+        "derechos": "Copyright"
     }
 }

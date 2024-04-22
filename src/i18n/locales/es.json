@@ -18,5 +18,9 @@
         "contactame": "Contactame",
         "textarea": "Mensaje",
         "enviar": "Enviar Mensaje"
+    },
+    "footer": {
+        "derechos": "Derechos reservados"
     }
+    
 }

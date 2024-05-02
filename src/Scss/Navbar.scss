@@ -27,6 +27,7 @@
     a {
         text-decoration: none;
         color: white;
+        font-size: 22px;
     }
 
 
@@ -37,7 +38,7 @@
     &__mobile {
         position: absolute;
         top: 60px;
-        opacity: 0.8;
+        opacity: 0.9;
         background-color: black;
         width: 100%;
         height: 480px;
@@ -50,7 +51,7 @@
             list-style: none;
             font-size: 20px;
             font-weight: 500;
-            margin: 0px 0px 10px 0px ;
+            margin: 20px 0px 0px 0px ;
             color: white;
             text-align: end;
         }
@@ -66,7 +67,7 @@
         border-radius: 15px;
         font-family: Variables.$font-Ubuntu;
         font-weight: bold;
-        margin: 5px 0px 0px 0px;
+        margin: 20px 0px 0px 0px;
         float: right;
         color: white;
     }
@@ -93,7 +94,7 @@
         background-color: Variables.$base-color;
         cursor: pointer;
         border-radius: 5px;
-        margin: 0px 10% 0px 0px;
+        margin: 20px 1% 0px 0px;
     }
     &__divIcons {
         margin: 25px 0px 0px 0px;
@@ -109,6 +110,19 @@
             
         }
       }
+      &__enlace {
+        
+        :hover {
+            color: Variables.$Secundary-color;
+        }
+    }
+    &__hr {
+        height: 1px;
+        color: white;
+        width: 60%;
+        float: right;
+    }
+
 }
 
 
@@ -186,6 +200,9 @@
             }
         }
 
+        &__hr {
+            display: none;
+        }
     }
 
 }

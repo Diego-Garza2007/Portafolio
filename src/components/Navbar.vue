@@ -29,7 +29,9 @@
       <div class="nav__mobileflex">
     <ul>
       <li class="nav__enlace"><RouterLink :to="Tr.i18nRoute({ name: 'home' })" >Inicio</RouterLink></li>
+      <hr class="nav__hr">
       <li class="nav__enlace"><RouterLink :to="Tr.i18nRoute({ name: 'proyectos' })">{{ $t("nav.proyectos") }}</RouterLink></li>
+      <hr class="nav__hr">
       <button class="nav__Contact nav__mod" @click="scrollToContact">{{ $t("nav.contactame") }}</button>
     </ul>
 

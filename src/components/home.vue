@@ -1,14 +1,18 @@
+<script>
+import 'animate.css';
+</script>
+
 <template>
     <div id="home"></div>
     <div class="container-home" >
         <div class="container-home__Imgcontainer">
-        <img src="../assets/Foto-diego.png" class="container-home__img">
-        <div class="container-home__Imgbg"></div>
+        <img src="../assets/Foto-diego.png" class="container-home__img animate__animated animate__fadeInDown">
+        <div class="container-home__Imgbg animate__animated animate__fadeIn"></div>
     </div>
     <div class="container-home__info">
-        <h1 class="container-home__title">Diego Emilio Garza Gudino</h1>
-        <h3 class="container-home__subtitle">{{ $t("body.dev") }}</h3>
-        <button class="container-home__button"><p>{{ $t("body.descarga") }}</p> <font-awesome-icon icon="fa-solid fa-file" size="lg" /></button>
+        <h1 class="container-home__title animate__animated animate__fadeInDown">Diego Emilio Garza Gudino</h1>
+        <h3 class="container-home__subtitle animate__animated animate__fadeIn ">{{ $t("body.dev") }}</h3>
+        <button class="container-home__button animate__animated animate__bounceIn "><p>{{ $t("body.descarga") }}</p> <font-awesome-icon icon="fa-solid fa-file" size="lg" /></button>
     </div>
     </div>
 
@@ -59,12 +63,16 @@ align-items: center;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+
+    animation-duration: 2s;
 }
 
 &__subtitle {
     color: $Secundary-color;
     margin: 5px 0px 20px 0px;
     text-align: center;
+
+    animation-duration: 4s;
 }
 
 &__button {

@@ -10,8 +10,8 @@
     >
    
       
-        <input type="email" name="email" class="container-contacto__email" placeholder="E-mail">
-        <textarea name="message" v-bind:placeholder=" $t('body.contactame')" class="container-contacto__desc"></textarea>
+        <input type="email" name="email" class="container-contacto__email" placeholder="E-mail" required>
+        <textarea name="message" v-bind:placeholder=" $t('body.contactame')" class="container-contacto__desc" required></textarea>
   
     <!-- your other form fields go here -->
     <button type="submit" class="container-contacto__submit">{{  $t('body.enviar') }}</button>

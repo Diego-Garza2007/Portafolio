@@ -1,5 +1,5 @@
 <template>
-    <section class="bg">
+    <section class="bg" >
     <div class="container-about" >
 
 

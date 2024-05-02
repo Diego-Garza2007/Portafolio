@@ -9,6 +9,7 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
     <div class="footer__icons">
     <a target="_blank" href="https://www.linkedin.com/in/diego-garza-gudino-918a9720b/?originalSubdomain=mx"><font-awesome-icon icon="fa-brands fa-linkedin" class="fa-2xl"/></a>
     <a target="_blank" href="https://github.com/Diego-Garza2007"><font-awesome-icon icon="fa-brands fa-github" class="fa-2xl"/></a>
+    <a target="_blank" href="https://www.codewars.com/users/DiegoG07"><img src="/codewars.png"></a>
     </div>
 </div>
 </template>
@@ -44,6 +45,11 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
             cursor: pointer;
             text-decoration: none;
             margin: 0px 15px 0px 0px;
+
+            img {
+                width: 35px;
+                transform: translateY(-3px);
+            }
         }
     }
     

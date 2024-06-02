@@ -19,6 +19,14 @@
         "textarea": "Mensaje",
         "enviar": "Enviar Mensaje"
     },
+    "Card": {
+        "FirstApp": "Validacion de Formulario",
+        "SecondApp": "Calculadora de Edad",
+        "ThirdApp" : "Api de Bebidas",
+        "fourthApp": "Eiaostagram - En progreso",
+        "fifthApp": "Calculadora Matematica",
+        "SixthApp" : "Tienda en Linea"
+    },
     "footer": {
         "derechos": "Derechos reservados"
     }

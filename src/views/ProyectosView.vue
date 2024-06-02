@@ -1,6 +1,69 @@
 <script setup>
 import Contact from "../components/contact.vue";
 import Footer from "../components/footer.vue";
+
+import { ref } from 'vue'
+import Card from "../components/Card.vue"
+
+const cards = ref([
+  {
+    imageSrc: '/Cards/EmailApp.svg',
+    titleKey: 'Card.FirstApp',
+    link: 'https://diego-garza2007.github.io/Front-mentor-Junior1/',
+    techImages: [
+      '/Cards/HtmlC.svg',
+      '/Cards/CssC.svg',
+      '/Cards/JSC.svg'
+    ]
+  },
+  {
+    imageSrc: '/Cards/AgeApp.svg',
+    titleKey: 'Card.SecondApp',
+    link: 'https://diego-garza2007.github.io/Front-mentor-Junior2/',
+    techImages: [
+      '/Cards/HtmlC.svg',
+      '/Cards/CssC.svg',
+      '/Cards/JSC.svg'
+    ]
+  },
+  {
+    imageSrc: '/Cards/Bebidas.svg',
+    titleKey: 'Card.ThirdApp',
+    link: 'https://bebidas-api-vue.netlify.app',
+    techImages: [
+      '/Cards/TailwindC.svg',
+      '/Cards/VueC.svg'
+    ]
+  },
+  {
+    imageSrc: '/Cards/Eiaostagram.svg',
+    titleKey: 'Card.fourthApp',
+    link: '#',
+    techImages: [
+    ]
+  },
+  {
+    imageSrc: '/Cards/Calculadora.svg',
+    titleKey: 'Card.fifthApp',
+    link: 'https://diego-garza2007.github.io/CalculatorApp/',
+    techImages: [
+      '/Cards/HtmlC.svg',
+      '/Cards/SassC.png',
+      '/Cards/JSC.svg'
+    ]
+  },
+  {
+    imageSrc: '/Cards/VuefireEcomm.svg',
+    titleKey: 'Card.SixthApp',
+    link: 'https://pos-vue-firebase-eta.vercel.app/',
+    techImages: [
+      '/Cards/FirebaseC.svg',
+      '/Cards/VueC.svg'
+    ]
+  },
+])
+ 
+
 </script>
 
 <template>
@@ -9,99 +72,16 @@ import Footer from "../components/footer.vue";
   </h1>
 
   <section class="container-proyectos" id="projects">
-    <div class="container-proyectos__Card">
-      <img
-        src="/Cards/EmailApp.svg"
-        alt=""
-        class="container-proyectos__MainImage"
-      />
-      <div class="container-proyectos__Card__contenido">
-        <p>
-          <a
-            href="https://diego-garza2007.github.io/Front-mentor-Junior1/"
-            target="_blank"
-            >Validacion de formulario</a
-          >
-        </p>
-        <div class="container-proyectos__Card__FlexImg">
-          <img src="/Cards/HtmlC.svg" alt="" />
-          <img src="/Cards/CssC.svg" alt="" />
-          <img src="/Cards/JSC.svg" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="container-proyectos__Card">
-      <img src="/Cards/AgeApp.svg" alt="" />
-      <div class="container-proyectos__Card__contenido">
-        <p>
-          <a
-            href="https://diego-garza2007.github.io/Front-mentor-Junior2/"
-            target="_blank"
-            >Calculadora de edad</a
-          >
-        </p>
-        <div class="container-proyectos__Card__FlexImg">
-          <img src="/Cards/HtmlC.svg" alt="" />
-          <img src="/Cards/CssC.svg" alt="" />
-          <img src="/Cards/JSC.svg" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="container-proyectos__Card">
-      <img src="/Cards/Bebidas.svg" alt="" />
-      <div class="container-proyectos__Card__contenido">
-        <p>
-          <a
-            href="https://bebidas-api-vue.netlify.app/"
-            target="_blank"
-            >Api de Bebidas</a
-          >
-        </p>
-        <div class="container-proyectos__Card__FlexImg">
-          <img src="/Cards/HtmlC.svg" alt="" />
-          <img src="/Cards/CssC.svg" alt="" />
-          <img src="/Cards/JSC.svg" alt="" />
-          <img src="/Cards/VueC.svg" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="container-proyectos__Card">
-      <img src="/Cards/Eiaostagram.svg" alt="" />
-      <div class="container-proyectos__Card__contenido">
-        <p>
-          <a
-            href="#"
-            target="_blank"
-            >Red Social Eiaostagram - Coming soon</a
-          >
-        </p>
-        <div class="container-proyectos__Card__FlexImg">
-<!--           <img src="/Cards/LaravelC.svg" alt="" />
-          <img src="/Cards/dockerC.svg" alt="" /> -->
-        </div>
-      </div>
-    </div>
-    <div class="container-proyectos__Card">
-      <img src="/Cards/Calculadora.svg" alt="" />
-      <div class="container-proyectos__Card__contenido">
-        <p>
-          <a
-            href="https://diego-garza2007.github.io/Front-mentor-Junior2/"
-            target="_blank"
-            >Calculadora Matematica - in Progress </a
-          >
-        </p>
-        <div class="container-proyectos__Card__FlexImg">
-<!--           <img src="/Cards/HtmlC.svg" alt="" />
-          <img src="/Cards/CssC.svg" alt="" />
-          <img src="/Cards/JSC.svg" alt="" />
-          <img src="/Cards/VueC.svg" alt="" /> -->
-        </div>
-      </div>
-    </div>
+    <div class="container-proyectos">
+    <Card
+      v-for="(card, index) in cards"
+      :key="index"
+      :imageSrc="card.imageSrc"
+      :titleKey="card.titleKey"
+      :link="card.link"
+      :techImages="card.techImages"
+    />
+  </div>
 
   </section>
 

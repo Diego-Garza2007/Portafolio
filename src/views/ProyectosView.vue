@@ -141,11 +141,15 @@ const cards = ref([
   gap: 20px;
 
   &__MainImage {
+    width: 100%;
+    height: auto;
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
   }
 
   &__Card {
     height: 405px;
+    width: 100%; // Asegura que la Card siempre respete el ancho del grid
     max-width: 320px;
     border-radius: 15px;
     background: linear-gradient(
@@ -167,6 +171,12 @@ const cards = ref([
       justify-content: space-around;
       width: 50%;
       margin: 100px auto 0 auto;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     }
 
     &__contenido {
@@ -189,7 +199,6 @@ const cards = ref([
     }
   }
 }
-
 // Responsive para tablets y desktops
 @media (min-width: 1070px) {
   .container-proyectos {

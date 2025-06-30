@@ -166,14 +166,18 @@ $animationSpeed: 30s;
   }
 
   .slide {
-    height: 100px;
-    width: 250px;
-    flex-shrink: 0;
+  height: 100px;
+  width: 250px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
     img {
-      height: 100px;
-      width: 250px;
-      object-fit: contain;
+    height: auto;
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
 
     }
   }

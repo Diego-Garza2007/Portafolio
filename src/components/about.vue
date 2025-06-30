@@ -135,6 +135,7 @@ $animationSpeed: 30s;
   overflow: hidden;
   position: relative;
   width: 100%;
+  z-index: 2;
 
 
   &::before,

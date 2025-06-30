@@ -43,9 +43,12 @@
            <LanguageSwicht />
         
           <button class="nav__button Imoon" @click="toggleDark()" >
-            <font-awesome-icon v-if="isDark === false" icon="fa-solid fa-moon" class="fa-2xl" />
+              <transition name="icon-fade" mode="out-in">
+            <font-awesome-icon v-if="isDark === false" icon="fa-solid fa-moon" class="fa-2xl" key="moon" />
            
-            <font-awesome-icon v-else icon="fa-solid fa-sun" class="fa-2xl"/>
+            <font-awesome-icon v-else icon="fa-solid fa-sun" class="fa-2xl" key="sun"/>
+              </transition>
+
           </button>
           </div>
     </div>
@@ -56,3 +59,20 @@
             
     </nav>
 </template>
+
+<style lang="scss">
+.icon-fade-enter-active, .icon-fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+.icon-fade-enter-from, .icon-fade-leave-to {
+  opacity: 0;
+  transform: scale(0.7) rotate(-15deg);
+}
+
+.icon-fade-enter-to, .icon-fade-leave-from {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+</style>

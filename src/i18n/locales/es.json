@@ -12,6 +12,7 @@
     "body": {
         "dev": "Desarrollador Web y SOC Analyst",
         "descarga": "Descargar CV",
+        "certificados": "Certificados",
         "descripcion": "Soy un programador web full stack que constantemente aprende nueva técnicas y tecnologías para mejorar el rendimiento de paginas web y hacerlas mas accesibles a más público, me especializo mas por la parte de Front end y tengo conocimiento certificados en Sistema Operativo Linux y como SOC Analyst (HTB). Mi nivel de ingles es del #?, también aprendo otros idiomas como ¿???. ",
         "tecnologia": "Tecnologias",
         "proyectos": "Proyectos",
@@ -25,7 +26,8 @@
         "ThirdApp" : "Api de Bebidas",
         "fourthApp": "Eiaostagram - En progreso",
         "fifthApp": "Calculadora Matematica",
-        "SixthApp" : "Tienda en Linea"
+        "SixthApp" : "Tienda en Linea",
+        "SevenApp" : "App Salon"
     },
     "footer": {
         "derechos": "Derechos reservados"

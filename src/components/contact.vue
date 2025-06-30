@@ -24,7 +24,7 @@
 <style lang="scss">
 @import '../Scss/_Variables.scss';
 .container-contacto {
-    margin: 0px 0px 0px 0px;
+    
     max-height: 700px;
 
     h1 {
@@ -36,7 +36,7 @@
 
     &__form {
         width: 80%;
-        margin: 5% auto 0px auto;
+        margin: 3% auto 0px auto;
         display: flex;
         flex-direction: column;
     }

@@ -7,60 +7,73 @@ import Card from "../components/Card.vue"
 
 const cards = ref([
   {
-    imageSrc: '/Cards/EmailApp.svg',
+    imageSrc: '/Cards/proyects/EmailApp.svg',
     titleKey: 'Card.FirstApp',
     link: 'https://diego-garza2007.github.io/Front-mentor-Junior1/',
     techImages: [
-      '/Cards/HtmlC.svg',
-      '/Cards/CssC.svg',
-      '/Cards/JSC.svg'
+      '/Cards/Icons/HtmlC.svg',
+      '/Cards/Icons/CssC.svg',
+      '/Cards/Icons/JSC.svg'
     ]
   },
   {
-    imageSrc: '/Cards/AgeApp.svg',
+    imageSrc: '/Cards/proyects/AgeApp.svg',
     titleKey: 'Card.SecondApp',
     link: 'https://diego-garza2007.github.io/Front-mentor-Junior2/',
     techImages: [
-      '/Cards/HtmlC.svg',
-      '/Cards/CssC.svg',
-      '/Cards/JSC.svg'
+      '/Cards/Icons/HtmlC.svg',
+      '/Cards/Icons/CssC.svg',
+      '/Cards/Icons/JSC.svg'
     ]
   },
   {
-    imageSrc: '/Cards/Bebidas.svg',
+    imageSrc: '/Cards/proyects/Bebidas.svg',
     titleKey: 'Card.ThirdApp',
     link: 'https://bebidas-api-vue.netlify.app',
     techImages: [
-      '/Cards/TailwindC.svg',
-      '/Cards/VueC.svg'
+      '/Cards/Icons/TailwindC.svg',
+      '/Cards/Icons/VueC.svg'
     ]
   },
   {
-    imageSrc: '/Cards/Eiaostagram.svg',
+    imageSrc: '/Cards/proyects/Eiaostagram.svg',
     titleKey: 'Card.fourthApp',
     link: '#',
     techImages: [
     ]
   },
   {
-    imageSrc: '/Cards/Calculadora.svg',
+    imageSrc: '/Cards/proyects/Calculadora.svg',
     titleKey: 'Card.fifthApp',
     link: 'https://diego-garza2007.github.io/CalculatorApp/',
     techImages: [
-      '/Cards/HtmlC.svg',
-      '/Cards/SassC.png',
-      '/Cards/JSC.svg'
+      '/Cards/Icons/HtmlC.svg',
+      '/Cards/Icons/SassC.png',
+      '/Cards/Icons/JSC.svg'
     ]
   },
   {
-    imageSrc: '/Cards/VuefireEcomm.svg',
+    imageSrc: '/Cards/proyects/VuefireEcomm.svg',
     titleKey: 'Card.SixthApp',
     link: 'https://pos-vue-firebase-eta.vercel.app/',
     techImages: [
-      '/Cards/FirebaseC.svg',
-      '/Cards/VueC.svg'
+      '/Cards/Icons/FirebaseC.svg',
+      '/Cards/Icons/TailwindC.svg',
+      '/Cards/Icons/VueC.svg'
     ]
   },
+    {
+    imageSrc: '/Cards/proyects/FinMty.svg',
+    titleKey: 'Card.SixthApp',
+    link: 'https://fin-mty.vercel.app/',
+    techImages: [
+      '/Cards/Icons/VueC.svg',
+      '/Cards/Icons/nodejs.svg',
+      '/Cards/Icons/express.svg',
+      '/Cards/Icons/mongodb.svg'
+    ]
+  },
+
 ])
  
 
@@ -71,18 +84,17 @@ const cards = ref([
     <a>{{ $t("body.proyectos") }}</a>
   </h1>
 
-  <section class="container-proyectos" id="projects">
+  <section class="proyectos-section">
     <div class="container-proyectos">
-    <Card
-      v-for="(card, index) in cards"
-      :key="index"
-      :imageSrc="card.imageSrc"
-      :titleKey="card.titleKey"
-      :link="card.link"
-      :techImages="card.techImages"
-    />
-  </div>
-
+      <Card
+        v-for="(card, index) in cards"
+        :key="index"
+        :imageSrc="card.imageSrc"
+        :titleKey="card.titleKey"
+        :link="card.link"
+        :techImages="card.techImages"
+      />
+    </div>
   </section>
 
   <Contact />
@@ -92,11 +104,11 @@ const cards = ref([
 <style lang="scss">
 @import "../Scss/_Variables.scss";
 
+// Título animado
 .title-proyect {
-  text-align: left;
-  font-size: 48px;
   text-align: center;
-  margin: 100px 0px 50px 0px;
+  font-size: 48px;
+  margin: 100px 0 0 0;
 
   a {
     animation: fluido 5s ease-in-out infinite;
@@ -120,17 +132,16 @@ const cards = ref([
   }
 }
 
+// Contenedor principal de las Cards
 .container-proyectos {
-  width: 340;
-  margin: 0px auto 30px auto;
+  width: 340px;
+  margin: 30px auto 20px auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  height: auto;
   gap: 20px;
 
   &__MainImage {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0 0;
   }
 
   &__Card {
@@ -145,17 +156,17 @@ const cards = ref([
       rgba(0, 0, 0, 0.04) 91.64%
     );
     backdrop-filter: blur(20px);
-    margin: 0px auto 0px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 
     &__FlexImg {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 50%;
-        margin: 100px auto 0px auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 50%;
+      margin: 100px auto 0 auto;
     }
 
     &__contenido {
@@ -174,19 +185,17 @@ const cards = ref([
     p {
       font-size: 24px;
       font-weight: 400;
-      margin: 0px 0px 50px 0px;
+      margin: 0 0 50px 0;
     }
   }
 }
 
+// Responsive para tablets y desktops
 @media (min-width: 1070px) {
   .container-proyectos {
     width: 960px;
-    margin: 70px auto 0px auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     gap: 30px;
-    height: 120vh;
   }
 }
 
@@ -194,13 +203,11 @@ const cards = ref([
   .title-proyect {
     font-size: 64px;
   }
+
   .container-proyectos {
     width: 1300px;
-    margin: 70px auto 0px auto;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     gap: 30px;
-    height: 100vh;
   }
 }
 </style>

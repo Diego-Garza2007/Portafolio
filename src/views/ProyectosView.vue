@@ -1,7 +1,6 @@
 <script setup>
 import Contact from "../components/contact.vue";
 import Footer from "../components/footer.vue";
-
 import { ref } from 'vue'
 import Card from "../components/Card.vue"
 
@@ -14,7 +13,8 @@ const cards = ref([
       '/Cards/Icons/HtmlC.svg',
       '/Cards/Icons/CssC.svg',
       '/Cards/Icons/JSC.svg'
-    ]
+    ],
+    loaded: false
   },
   {
     imageSrc: '/Cards/proyects/AgeApp.svg',
@@ -24,7 +24,8 @@ const cards = ref([
       '/Cards/Icons/HtmlC.svg',
       '/Cards/Icons/CssC.svg',
       '/Cards/Icons/JSC.svg'
-    ]
+    ],
+    loaded: false
   },
   {
     imageSrc: '/Cards/proyects/Bebidas.svg',
@@ -33,14 +34,15 @@ const cards = ref([
     techImages: [
       '/Cards/Icons/TailwindC.svg',
       '/Cards/Icons/VueC.svg'
-    ]
+    ],
+    loaded: false
   },
   {
     imageSrc: '/Cards/proyects/Eiaostagram.svg',
     titleKey: 'Card.fourthApp',
     link: '#',
-    techImages: [
-    ]
+    techImages: [],
+    loaded: false
   },
   {
     imageSrc: '/Cards/proyects/Calculadora.svg',
@@ -50,7 +52,8 @@ const cards = ref([
       '/Cards/Icons/HtmlC.svg',
       '/Cards/Icons/SassC.png',
       '/Cards/Icons/JSC.svg'
-    ]
+    ],
+    loaded: false
   },
   {
     imageSrc: '/Cards/proyects/VuefireEcomm.svg',
@@ -60,9 +63,10 @@ const cards = ref([
       '/Cards/Icons/FirebaseC.svg',
       '/Cards/Icons/TailwindC.svg',
       '/Cards/Icons/VueC.svg'
-    ]
+    ],
+    loaded: false
   },
-    {
+  {
     imageSrc: '/Cards/proyects/FinMty.svg',
     titleKey: 'Card.SixthApp',
     link: 'https://fin-mty.vercel.app/',
@@ -71,12 +75,10 @@ const cards = ref([
       '/Cards/Icons/nodejs.svg',
       '/Cards/Icons/express.svg',
       '/Cards/Icons/mongodb.svg'
-    ]
-  },
-
+    ],
+    loaded: false
+  }
 ])
- 
-
 </script>
 
 <template>
@@ -93,6 +95,10 @@ const cards = ref([
         :titleKey="card.titleKey"
         :link="card.link"
         :techImages="card.techImages"
+        v-show="card.loaded"
+        :class="{ 'animate__animated animate__fadeIn': card.loaded }"
+        @loaded="card.loaded = true"
+          :style="card.loaded ? `animation-delay: ${index * 200}ms` : ''"
       />
     </div>
   </section>
@@ -100,6 +106,7 @@ const cards = ref([
   <Contact />
   <Footer />
 </template>
+
 
 <style lang="scss">
 @import "../Scss/_Variables.scss";

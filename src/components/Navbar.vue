@@ -41,10 +41,19 @@ function outsideClickListener(event) {
 }
 
   function scrollToContact() {
-      const contactoElement = document.getElementById('contacto');
-        if (contactoElement) {
-          contactoElement.zscrollIntoView({ behavior: 'smooth' });
-    }
+  const contactoElement = document.getElementById('contacto');
+  const mobile = document.querySelector('#mobile_select')
+
+  if (contactoElement) {
+    contactoElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Si el menú móvil está abierto, lo cerramos
+  if (mobile && mobile.classList.contains('nav__mobile')) {
+    mobile.classList.remove('nav__mobile');
+    mobile.classList.add('None');
+    document.removeEventListener('click', outsideClickListener);
+  }
   }
 
 

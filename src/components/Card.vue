@@ -1,6 +1,6 @@
 <template>
     <div class="container-proyectos__Card">
-      <img :src="imageSrc" alt="Project Image" />
+      <img :src="imageSrc" @load="emitLoaded" alt="Project Image" />
       <div class="container-proyectos__Card__contenido">
         <p>
           <a :href="link" target="_blank">{{ $t(titleKey) }}</a>
@@ -32,5 +32,10 @@
       required: true
     }
   })
+  const emit = defineEmits(['loaded'])
+  function emitLoaded() {
+  emit('loaded')
+}
+
   </script>
   

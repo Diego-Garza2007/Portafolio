@@ -7,16 +7,43 @@
   import Tr from "@/i18n/translation"
 
 
-  function AbrirNav() {
-    const mobile = document.querySelector('#mobile_select')
-    mobile.classList.toggle('nav__mobile')
-    mobile.classList.toggle('None')
+function AbrirNav() {
+  const mobile = document.querySelector('#mobile_select')
+  const isOpen = mobile.classList.contains('nav__mobile')
+
+  if (!isOpen) {
+    // Abrimos menú
+    mobile.classList.add('nav__mobile')
+    mobile.classList.remove('None')
+
+    // Añadimos listener después de un pequeño delay para no capturar el click que abre
+    setTimeout(() => {
+      document.addEventListener('click', outsideClickListener)
+    }, 100)
+  } else {
+    // Cerramos menú
+    mobile.classList.remove('nav__mobile')
+    mobile.classList.add('None')
+
+    document.removeEventListener('click', outsideClickListener)
   }
+}
+
+function outsideClickListener(event) {
+  const mobile = document.querySelector('#mobile_select')
+  if (!mobile.contains(event.target)) {
+    // Cerramos menú si se clickea fuera
+    mobile.classList.remove('nav__mobile')
+    mobile.classList.add('None')
+
+    document.removeEventListener('click', outsideClickListener)
+  }
+}
 
   function scrollToContact() {
       const contactoElement = document.getElementById('contacto');
         if (contactoElement) {
-          contactoElement.scrollIntoView({ behavior: 'smooth' });
+          contactoElement.zscrollIntoView({ behavior: 'smooth' });
     }
   }
 

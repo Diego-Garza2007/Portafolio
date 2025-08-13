@@ -68,7 +68,7 @@ const cards = ref([
   },
   {
     imageSrc: '/Cards/proyects/FinMty.svg',
-    titleKey: 'Card.SixthApp',
+    titleKey: 'Card.EightApp',
     link: 'https://fin-mty.vercel.app/',
     techImages: [
       '/Cards/Icons/VueC.svg',

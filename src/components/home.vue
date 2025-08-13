@@ -56,6 +56,9 @@ function cerrarModal() {
               <img src="/certificates/c1.png" alt="Certificado 1" class="img-certificado" />
               <img src="/certificates/c2.png" alt="Certificado 2" class="img-certificado" />
               <img src="/certificates/c3.png" alt="Certificado 3" class="img-certificado" />
+              <img src="/certificates/c4.png" alt="Certificado 3" class="img-certificado" />
+              <img src="/certificates/c5.png" alt="Certificado 3" class="img-certificado" />
+              <img src="/certificates/c6.png" alt="Certificado 3" class="img-certificado" />
               </div>
           </div>
         </transition>

@@ -10,7 +10,7 @@
         "contactame": "Contact me"
     },
     "body": {
-        "dev": "Web Developer & SOC Analyst",
+        "dev": "Full Stack Web Developer",
         "descarga": "Download CV",
         "certificados": "Certificates",
         "descripcion_1": "I am Diego Emilio Garza Gudiño, a full stack web developer focused on frontend development, constantly learning new technologies and best practices to build modern, fast, accessible, and secure websites.",
@@ -31,7 +31,8 @@
         "fourthApp": "Eiaostagram - In progress",
         "fifthApp": "Math Calculator",
         "SixthApp": "Ecommerce",
-        "SevenApp" : "Barber App"
+        "SevenApp" : "Barber App",
+        "EightApp": "FinMty"
     },
     "footer": {
         "derechos": "Copyright"

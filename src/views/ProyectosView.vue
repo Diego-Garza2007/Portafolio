@@ -38,13 +38,6 @@ const cards = ref([
     loaded: false
   },
   {
-    imageSrc: '/Cards/proyects/Eiaostagram.svg',
-    titleKey: 'Card.fourthApp',
-    link: '#',
-    techImages: [],
-    loaded: false
-  },
-  {
     imageSrc: '/Cards/proyects/Calculadora.svg',
     titleKey: 'Card.fifthApp',
     link: 'https://diego-garza2007.github.io/CalculatorApp/',
@@ -75,6 +68,28 @@ const cards = ref([
       '/Cards/Icons/nodejs.svg',
       '/Cards/Icons/express.svg',
       '/Cards/Icons/mongodb.svg'
+    ],
+    loaded: false
+  },
+    {
+    imageSrc: '/Cards/proyects/VueNotes.svg',
+    titleKey: 'Card.NinthApp',
+    link: 'https://vuenotes-deploy.netlify.app/',
+    techImages: [
+      '/Cards/Icons/VueC.svg',
+      '/Cards/Icons/Vuetify.svg',
+      '/Cards/Icons/FirebaseC.svg',
+    ],
+    loaded: false
+  },
+   {
+    imageSrc: '/Cards/proyects/emined.svg',
+    titleKey: 'Card.TenthApp',
+    link: 'https://eminedscents.com/pages/landing-page',
+    techImages: [
+      '/Cards/Icons/Gsap.svg',
+      '/Cards/Icons/HtmlC.svg',
+      '/Cards/Icons/CssC.svg',
     ],
     loaded: false
   }

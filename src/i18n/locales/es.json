@@ -32,7 +32,9 @@
         "fifthApp": "Calculadora Matematica",
         "SixthApp" : "Tienda en Linea",
         "SevenApp" : "App Salon",
-        "EightApp": "FinMty"
+        "EightApp": "FinMty",
+        "NinthApp": "Vue Notes",
+        "TenthApp": "Emined Scents"
     },
     "footer": {
         "derechos": "Derechos reservados"

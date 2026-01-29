@@ -85,7 +85,7 @@ const cards = ref([
    {
     imageSrc: '/Cards/proyects/emined.svg',
     titleKey: 'Card.TenthApp',
-    link: 'https://eminedscents.com/pages/landing-page',
+    link: 'https://eminedscents.info',
     techImages: [
       '/Cards/Icons/Gsap.svg',
       '/Cards/Icons/HtmlC.svg',
